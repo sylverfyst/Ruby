@@ -1,0 +1,20 @@
+true && true is true #got it
+false && true is false #got it
+1 == 1 && 2 == 1 is false #got it
+"test" == "test" is true #got it
+1 == 1 || 2 != 1 is true #got it
+true && 1 == 1 is true #got it
+false && 0 != 0 is true #didn't get it (false && false == false)
+true || 1 == 1 is true #got it
+"test" == "testing" is false #got it
+1 != 0 && 2 == 1 is false #got it
+"test" != "testing" is true #got it
+"test" == 1 is false #got it
+!(true && false) is true #got it
+!(1 == 1 && 0 != 1) is false #got it
+!(10 == 1 || 1000 == 1000) is false #got it
+!(1 != 10 || 3 == 4) is false #got it
+!("testing" == "testing" && "Zed" == "Cool Guy") is true #got it
+1 == 1 && (!("testing" == 1 || 1 == 0)) is true #got it
+"chunky" == "bacon" && (!(3 == 4 || 3 == 3)) is false #got it
+3 == 3 && (!("testing" == "testing" || "Ruby" == "Fun")) is false #got it
